@@ -1,0 +1,9 @@
+section{
+    text-align:center;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+}
