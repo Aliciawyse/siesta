@@ -41,3 +41,6 @@ button {
 
 }
 
+.locationResults {
+    display: none;
+}
