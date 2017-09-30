@@ -1,3 +1,7 @@
+body {
+    background-color: #416373;
+}
+
 
 section{
     text-align:center;
@@ -6,6 +10,8 @@ section{
 .jumbotron {
     background: url("https://d193o8p26ehxdy.cloudfront.net/img-thumbs/960w/7325VFAGUL.jpg");
     background-size: cover;
+    font-family: 'Caveat', cursive;
+    font-color:  #734163;
 }
 
 form {
