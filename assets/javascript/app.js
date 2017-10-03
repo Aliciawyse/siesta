@@ -20,10 +20,16 @@ $(document).ready(function(){
 		var firstLoc = $("#firstLocation").val().trim();
         var secondLoc = $("#secondLocation").val().trim();
 
-        //display results
-        $("#results").removeClass("locationResults");
+        if(firstLoc || secondLoc === ""){
 
-        searchTwitter(firstLoc);
+            $('#myModal').modal('show');
+
+        } else {
+            //display results
+            $("#results").removeClass("locationResults");
+        }
+
+        //searchTwitter(firstLoc);
     });
 });
 

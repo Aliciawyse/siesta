@@ -48,7 +48,10 @@
 </section>
 
 <section>
-    <button id="submit">GO!</button>
+
+    <!-- Trigger the modal with a button -->
+    <button id="submit" data-toggle="modal" data-target="#myModal">GO!</button>
+
 </section>
 
 <section id="results" class="locationResults">
@@ -74,9 +77,9 @@
             <div class="row">
                 <div class="col-sm-6 col-md-6">
                     <div class="thumbnail">
-                        <div id="map"></div>
+                        <div id="placeholder"></div>
                         <div class="caption">
-                            <h3>Location 1 label</h3>
+                            <h3 id="loc1"></h3>
                             <p>This is where api data gets returned.</p>
                         </div>
                     </div>
@@ -84,9 +87,9 @@
 
                 <div class="col-sm-6 col-md-6">
                     <div class="thumbnail">
-                        <div id="map2"></div>
+                        <div id="placeholder2"></div>
                         <div class="caption">
-                            <h3>Location 2 label</h3>
+                            <h3 id="loc2"></h3>
                             <p>This is where api data gets returned.</p>
                         </div>
                     </div>
@@ -95,6 +98,31 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
 
 
 </section>
