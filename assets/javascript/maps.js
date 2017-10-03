@@ -1,16 +1,25 @@
 //init map function has to be global
 var map;
+var map2;
 
 function initMap(lat, lng) {
     lat = lat || 33.7756178;
     lng = lng || -84.39628499999999;
+
 
     // Constructor creates a new map - only center and zoom are required.
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: lat, lng: lng},
         zoom: 13
     });
+
+    map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: {lat: lat, lng: lng},
+        zoom: 13
+    });
+
 }
+
 
 //function to get lat and lng coordinates
 
@@ -35,15 +44,18 @@ function getGeoCode(userInput){
 }
 
 
-$("#submit").on("click", function(){
+$("#maps").on("click", function(){
 
     event.preventDefault();
 
-    console.log($("#firstLocation").val());
-
     var userInput = $("#firstLocation").val().trim();
+    var userInput2 = $("#secondLocation").val().trim();
+
+    google.maps.event.trigger(map, 'resize');
 
     getGeoCode(userInput);
+    getGeoCode(userInput2);
+
 
 });
 

@@ -45,7 +45,16 @@ button {
     display: none;
 }
 
+.tempHide {
+    display: none;
+}
+
 #map {
-    height: 50%;
-    width: 50%;
+    height: 300px;
+    width: 100%;
+}
+
+#map2 {
+    height: 300px;
+    width: 100%;
 }
