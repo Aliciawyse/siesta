@@ -36,6 +36,13 @@ $(document).ready(function(){
     });
 });
 
+function manageContent(showMe, hide1, hide2){
+
+    $(showMe).removeClass('hidden');
+    $(hide1).addClass('hidden');
+    $(hide2).addClass('hidden');
+}
+
 
 
 

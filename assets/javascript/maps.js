@@ -19,7 +19,6 @@ function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia"
     }
 
 
-
     // Constructor creates a new map - only center and zoom are required.
     var socialMedia = new google.maps.Map(document.getElementById(loc), {
         center: {lat: lat, lng: lng},
@@ -65,12 +64,15 @@ $("#maps").on("click", function(){
     $("#loc2").html(userInput2);
 
 
-    google.maps.event.trigger(socialMedia, 'resize');
+    //google.maps.event.trigger(socialMedia, 'resize');
 
     //getGeoCode(userInput);
-    getGeoCode();
+    getGeoCode(userInput);
     getGeoCode(userInput2, 'socialMedia2');
-
 
 });
 
+//when you click twitter, show twitter and hide insta and map
+
+//in css create a class and call
+// it hidden (in html) add class and remove class

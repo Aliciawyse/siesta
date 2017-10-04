@@ -60,19 +60,59 @@
         <div class="container">
             <div class="btn-group btn-group-justified" role="group" aria-label="...">
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default">Twitter</button>
+                    <button type="button" class="btn btn-default" onclick="manageContent('#twitterData','#instagramData', '#mapData')">Twitter</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default">Instagram</button>
+                    <button type="button" class="btn btn-default" onclick="manageContent('#instagramData','#mapData', '#twitterData')">Instagram</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default" id="maps">Map</button>
+                    <button type="button" class="btn btn-default" id="maps" onclick="manageContent('#mapData','#instagramData', '#twitterData')">Map</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row socialMedia">
+    <div class="row socialMedia hidden" id="twitterbtn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <div id="twitterMedia"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <div id="twitterMedia2"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row socialMedia hidden" id="instagramData">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <div id="instaMedia"></div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <div id="instaMedia2"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row socialMedia hidden" id="mapData">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
@@ -98,6 +138,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 
