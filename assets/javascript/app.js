@@ -20,7 +20,10 @@ $(document).ready(function(){
 		var firstLoc = $("#firstLocation").val().trim();
         var secondLoc = $("#secondLocation").val().trim();
 
-        if(firstLoc || secondLoc === ""){
+        console.log("locs",firstLoc, secondLoc, firstLoc === "", secondLoc === "" );
+
+
+        if(firstLoc === "" || secondLoc === ""){
 
             $('#myModal').modal('show');
 
