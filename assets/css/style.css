@@ -1,23 +1,37 @@
-body {
-    background-color: #416373;
-}
-
-
 section{
     text-align:center;
+    background: #a0b1b9;
+}
+
+body {
+    background-color: #a0b1b9;
+}
+.lead {
+    font-family: Papyrus;
+    font-style: italic;
+    font-weight: bold; 
+}
+.display-3 {
+    font-family: Papyrus;
+    font-size: 250px;
+    font-weight: bold;
+    font-color: #a0b1b9;
 }
 
 .jumbotron {
     background: url("https://d193o8p26ehxdy.cloudfront.net/img-thumbs/960w/7325VFAGUL.jpg");
     background-size: cover;
-    font-family: 'Caveat', cursive;
-    font-color:  #734163;
+    font-color:  #606a6f;
+    background-color: #a0b1b9;
+
 }
 
 form {
     display: inline-block;
     text-align: center;
     font-size: 20px;
+    background-color: #a0b1b9;
+    font-family: Papyrus;
 }
 
 button {
@@ -28,13 +42,15 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 29px;
+    font-size: 20px;
     margin: 0 auto;
-
 }
 
 #submit{
     margin:1%;
+    background-color: #606a6f;
+    color: #FFFFFF;
+    font-family: Papyrus;
 }
 
 #locationOne,#locationTwo {
@@ -44,6 +60,12 @@ button {
     margin-top:3%;
     border: 1px black solid;
     display: inline-block;
-
 }
 
+.btn {
+    font-family: Papyrus;
+    font-size: 20px;
+}
+ h3 {
+    font-size: 15px;
+ }
