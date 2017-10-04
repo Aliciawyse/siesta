@@ -66,7 +66,7 @@
                     <button type="button" class="btn btn-default" onclick="manageContent('#twitterData','#instagramData', '#mapData')">Twitter</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default" onclick="manageContent('#instagramData','#mapData', '#twitterData')">Instagram</button>
+                   <a id="instagrambut"> <button type="button" class="btn btn-default" onclick="manageContent('#instagramData','#mapData', '#twitterData')">Instagram</button></a>
                 </div>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-default" id="maps" onclick="manageContent('#mapData','#instagramData', '#twitterData')">Map</button>
@@ -145,6 +145,8 @@
 
 
 <script src="assets/javascript/maps.js"></script>
+<script src="assets/javascript/app-lauren.js"></script>
+
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcZkO1ZtZBXFmOzs2H8el9HOwejgaYimg&v=3&callback=initMap">
