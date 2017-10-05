@@ -71,7 +71,6 @@ if (myParam != null || myParam != undefined) {
 
             var imgs2 = $("<img>").attr("src", response.data[i].images.standard_resolution.url)
             $("#instaMedia2").append(imgs2)
-
             };
         });
 
@@ -79,4 +78,5 @@ if (myParam != null || myParam != undefined) {
 }
 else {console.log("no param")
 }
+
 
