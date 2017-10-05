@@ -2,7 +2,7 @@
 
 //global variables
 var IGClientID = "347a9d4c9907483aaad64a1773877d9d";
-var URILand ="http://localhost:8000";
+var URILand ="https://aliciawyse.github.io/siesta/";
 var hash1;
 var hash2;
 
