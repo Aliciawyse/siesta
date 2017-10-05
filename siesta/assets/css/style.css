@@ -1,7 +1,10 @@
-
 section{
     text-align:center;
     background: #a0b1b9 ;
+}
+
+body {
+    background-color: #a0b1b9;
 }
 
 .lead {

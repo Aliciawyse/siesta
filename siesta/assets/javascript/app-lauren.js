@@ -46,12 +46,12 @@ if (myParam != null || myParam != undefined) {
             method: "GET",
             dataType:'jsonp'
         }).done(function(response) {
-            //console.log(response);
+            console.log(response);
 
             for (var i =0; i<response.data.length;i++){
 
              var imgs1 = $("<img>").attr("src", response.data[i].images.standard_resolution.url)
-             //console.log("img source", imgs1)
+             console.log("img source", imgs1)
              $("#instaMedia").append(imgs1)
             };
         });
