@@ -90,3 +90,7 @@ button {
     font-family: Papyrus;
     font-size: 20px;
 }
+
+#loc1, #loc2 {
+    text-transform: capitalize;
+}

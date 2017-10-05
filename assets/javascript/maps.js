@@ -1,8 +1,9 @@
-//init map function has to be global
+
 //ES 6 Default parameters: if someone runs my function without lat, lng or loc - my code breaks. Javascript is a loosley typed language. You could
 //get away with running these functions without params -- that's not a good thing.
 
-function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia", zoom = 8) {
+//this function initializes a map
+function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia", zoom = 13) {
 
 //Before default parameters I had to test for the validity of my parameters, assuming that I even got them. 1) Does paramater exist 2) is the parameter type a number
     // lat = lat || 33.7756178;
@@ -13,7 +14,7 @@ function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia"
     //ternary operator
     lat = typeof lat === "number" ? lat : 33.7756178;
 
-    //not using ternary operator
+    // example of not using ternary operator
     if(typeof lng !== "number"){
         lng = -84.39628499999999;
     }
@@ -50,7 +51,7 @@ function getGeoCode(userInput = 'Atlanta', loc){
         })
 }
 
-
+//Upon clicking the Map tab
 $("#maps").on("click", function(){
 
     event.preventDefault();
@@ -72,7 +73,4 @@ $("#maps").on("click", function(){
 
 });
 
-//when you click twitter, show twitter and hide insta and map
 
-//in css create a class and call
-// it hidden (in html) add class and remove class
