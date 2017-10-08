@@ -2,7 +2,7 @@
 //ES 6 Default parameters: if someone runs my function without lat, lng or loc - my code breaks. Javascript is a loosley typed language. You could
 //get away with running these functions without params -- that's not a good thing.
 
-//this function initializes a map
+//this function generates the map
 function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia", zoom = 13) {
 
 //Before default parameters I had to test for the validity of my parameters, assuming that I even got them. 1) Does paramater exist 2) is the parameter type a number
@@ -30,6 +30,8 @@ function initMap(lat = 33.7756178, lng = -84.39628499999999, loc = "socialMedia"
 
 
 //function to get lat and lng coordinates
+//we're using google's map api to generate a map. In order to use that api -- they require inputs: latitude and longitude of
+//location. this function grabs lat and lng
 function getGeoCode(userInput = 'Atlanta', loc){
 
     var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + userInput + "&key=AIzaSyDcZkO1ZtZBXFmOzs2H8el9HOwejgaYimg&v=3&callback=initMap";
@@ -55,6 +57,8 @@ function getGeoCode(userInput = 'Atlanta', loc){
 $("#maps").on("click", function(){
 
     event.preventDefault();
+
+    //our siesta app lets user input two location and view details on it to pick which one is the best
 
     var userInput = $("#firstLocation").val().trim();
     var userInput2 = $("#secondLocation").val().trim();

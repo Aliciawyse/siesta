@@ -12,6 +12,7 @@ function searchTwitter(firstLoc) {
     });
 }
 
+//user friendly UI that lets the user know -- hey you didn't enter some info'
 $(document).ready(function(){
 
     $("#submit").on("click", function(event){
